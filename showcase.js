@@ -24,6 +24,6 @@ async function play(i){const id=++run;cur=i;$("chat").innerHTML="";$("chips").in
 function render(){document.documentElement.lang=L;document.querySelectorAll("[data-i]").forEach(e=>{const v=T[L][e.dataset.i];if(e.dataset.i==="h1")e.innerHTML=v;else e.textContent=v});$("lang").textContent=L==="en"?"ไทย":"EN";
  $("tabs").innerHTML=S.map((s,i)=>`<button>${s.n[L]}</button>`).join("");[...$("tabs").children].forEach((b,i)=>b.onclick=()=>play(i));play(cur)}
 $("lang").onclick=()=>{L=L==="en"?"th":"en";render()};
-$("book").onclick=e=>{e.preventDefault();const id=(window.R7&&R7.CONTACT_LIFF)||"";if(id&&!id.startsWith("__"))location.href="https://liff.line.me/"+id;else location.href="/contact/"};
+$("book").onclick=e=>{e.preventDefault();const id=(window.R7&&R7.CONTACT_LIFF)||"";if(id&&!id.startsWith("__"))location.href="https://liff.line.me/"+id;else location.href="contact/"};
 $("share").onclick=async()=>{const u="https://liff.line.me/"+R7.LIFF_ID;if(inLine&&liff.isApiAvailable("shareTargetPicker"))await liff.shareTargetPicker([{type:"text",text:"Studio R7 — the chat is the demo 👉 "+u}]);else if(navigator.share)navigator.share({title:"Studio R7",url:u})};
 render();initLiff(R7.LIFF_ID);
