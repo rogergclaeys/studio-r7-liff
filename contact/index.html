@@ -1,11 +1,22 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Studio R7 — Build with us</title><meta name="theme-color" content="#FFFFFF"><link rel="icon" href="../assets/logo.svg"><script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script><link rel="stylesheet" href="../styles.css"></head><body><div class="glow"></div>
 <header><img src="../assets/logo.png" alt="Studio R7"><div><b>Studio R7</b><small id="tag">Build with us</small></div><button class="pill" id="lang">ไทย</button></header>
 <main><div class="hello" id="hello"><img id="avatar" alt=""><span id="greet"></span></div>
-<h1 id="h1">Tell us what to <em>automate</em>.</h1><p class="lead" id="lead">30 seconds. We reply right here in LINE.</p>
-<h2 id="q0">What do you need?</h2><div class="opts" id="jr"></div>
-<h2 id="q1">Channel</h2><div class="opts" id="ch"></div>
-<h2 id="q2">What should the agent do?</h2><div class="opts" id="use"></div>
-<input class="field" id="name" placeholder="Your name"><input class="field" id="biz" placeholder="Business / venue"><input class="field" id="phone" placeholder="Phone (optional)" inputmode="tel">
-<button class="cta" id="send">Send to Studio R7 chat</button><p class="msg" id="msg"></p>
-<a class="cta g" href="#" id="full">Prefer the full 2-minute brief? →</a><a class="cta g" href="tel:+66971709226" id="call">Call 097 170 9226</a><p class="lead" id="priv" style="font-size:13px;margin-top:10px"></p></main>
+<h1 id="h1">Tell us what to <em>fix</em>.</h1><p class="lead" id="lead"></p>
+<div class="note" id="note" role="status" hidden></div>
+<form id="form" novalidate autocomplete="on">
+<div role="group" aria-labelledby="q0" id="g0"><h2 id="q0">What do you need help with?</h2><div class="opts" id="jr"></div></div>
+<div id="more">
+<div role="group" aria-labelledby="q1"><h2 id="q1">Where should we reply?</h2><p class="hint" id="h1t"></p><div class="opts" id="ch"></div></div>
+<div role="group" aria-labelledby="q2"><h2 id="q2">What should your chat assistant do for customers?</h2><p class="hint" id="h2t"></p><div class="opts" id="use"></div></div>
+<h2 id="q3">Your details</h2>
+<div class="fg"><label for="name" id="l-name">Your name <span class="req">(required)</span></label><input class="field" id="name" name="name" type="text" autocomplete="name" aria-describedby="e-name" required><p class="err" id="e-name" role="alert" hidden></p></div>
+<div class="fg"><label for="biz" id="l-biz">Business or venue <span class="opt">(optional)</span></label><input class="field" id="biz" name="organization" type="text" autocomplete="organization"></div>
+<div class="fg"><label for="phone" id="l-phone">Phone <span class="opt">(optional)</span></label><div class="phonebox"><span class="cc" aria-hidden="true">+66</span><input class="field" id="phone" name="tel-national" type="tel" inputmode="numeric" autocomplete="tel-national" aria-describedby="h-phone e-phone"></div><p class="hint" id="h-phone"></p><p class="err" id="e-phone" role="alert" hidden></p></div>
+</div>
+<button class="cta" id="send" type="submit">Send to Studio R7 chat</button><p class="msg" id="msg" role="status"></p>
+</form>
+<div class="alt" id="alt"><a class="cta" href="#" id="full" target="_blank" rel="noopener">Start the 2-minute brief</a>
+<a class="cta g" href="#" id="lineopen" hidden>Open this page in LINE</a>
+<a class="cta g" href="tel:+66971709226" id="call">Call 097 170 9226</a></div>
+<p class="lead small" id="priv"></p></main>
 <footer>© Studio R7</footer><script src="../config.js"></script><script src="../common.js"></script><script src="../contact.js"></script></body></html>
